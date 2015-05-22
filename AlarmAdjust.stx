@@ -1,0 +1,38 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/ychamel/Xilinx/DigitalBob/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/ychamel/Xilinx/DigitalBob/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "AlarmAdjust.v" in library work
+Module <alarmstatecontroller> compiled
+ERROR:HDLCompilers:247 - "AlarmAdjust.v" line 99 Reference to vector wire 'sethour' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "AlarmAdjust.v" line 99 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "AlarmAdjust.v" line 100 Reference to vector wire 'setmin' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "AlarmAdjust.v" line 100 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "AlarmAdjust.v" line 106 Reference to vector wire 'sethour' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "AlarmAdjust.v" line 106 Illegal left hand side of blocking assignment
+ERROR:HDLCompilers:247 - "AlarmAdjust.v" line 107 Reference to vector wire 'setmin' is not a legal reg or variable lvalue
+ERROR:HDLCompilers:44 - "AlarmAdjust.v" line 107 Illegal left hand side of blocking assignment
+Analysis of file <"AlarmAdjust.prj"> failed.
+--> 
+
+Total memory usage is 182592 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

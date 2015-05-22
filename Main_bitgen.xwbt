@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ychamel\Xilinx\DigitalBob\Main.ncd
+OUTFILE=C:\Users\ychamel\Xilinx\DigitalBob\Main.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\ychamel\Xilinx\DigitalBob
+LICENSE=WebPack
+USER_INFO=210684813_0_0_436

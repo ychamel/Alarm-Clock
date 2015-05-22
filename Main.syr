@@ -1,0 +1,1161 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Stahp.v" in library work
+Compiling verilog file "ClockTheAbaza.v" in library work
+Module <Stahp> compiled
+Compiling verilog file "ClockDiviper.v" in library work
+Module <ClockTheAbaza> compiled
+Compiling verilog file "ClockAdjust.v" in library work
+Module <ClockDiviper> compiled
+Compiling verilog file "bcd27seg.v" in library work
+Module <ClockAdjust> compiled
+Compiling verilog file "BCD.v" in library work
+Module <bcd27seg> compiled
+Compiling verilog file "AlarmOn.v" in library work
+Module <BCD> compiled
+Compiling verilog file "AlarmJustice.v" in library work
+Module <AlarmOn> compiled
+Compiling verilog file "AlarmDivider.v" in library work
+Module <AlarmJustice> compiled
+Compiling verilog file "../../Downloads/lab0/twoBit.v" in library work
+Module <AlarmDivider> compiled
+Compiling verilog file "../../Downloads/lab0/Mux4.v" in library work
+Module <twoBit> compiled
+Compiling verilog file "../../Downloads/lab0/Dec.v" in library work
+Module <Mux4> compiled
+Compiling verilog file "Main.v" in library work
+Module <Dec> compiled
+Module <Main> compiled
+No errors in compilation
+Analysis of file <"Main.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Main> in library <work>.
+
+Analyzing hierarchy for module <ClockDiviper> in library <work>.
+
+Analyzing hierarchy for module <ClockTheAbaza> in library <work>.
+
+Analyzing hierarchy for module <ClockAdjust> in library <work>.
+
+Analyzing hierarchy for module <BCD> in library <work>.
+
+Analyzing hierarchy for module <bcd27seg> in library <work>.
+
+Analyzing hierarchy for module <Mux4> in library <work>.
+
+Analyzing hierarchy for module <twoBit> in library <work>.
+
+Analyzing hierarchy for module <Dec> in library <work>.
+
+Analyzing hierarchy for module <AlarmJustice> in library <work>.
+
+Analyzing hierarchy for module <AlarmOn> in library <work>.
+
+Analyzing hierarchy for module <AlarmDivider> in library <work>.
+
+Analyzing hierarchy for module <Stahp> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Main>.
+Module <Main> is correct for synthesis.
+ 
+Analyzing module <ClockDiviper> in library <work>.
+Module <ClockDiviper> is correct for synthesis.
+ 
+Analyzing module <ClockTheAbaza> in library <work>.
+Module <ClockTheAbaza> is correct for synthesis.
+ 
+Analyzing module <ClockAdjust> in library <work>.
+Module <ClockAdjust> is correct for synthesis.
+ 
+Analyzing module <BCD> in library <work>.
+Module <BCD> is correct for synthesis.
+ 
+Analyzing module <bcd27seg> in library <work>.
+Module <bcd27seg> is correct for synthesis.
+ 
+Analyzing module <Mux4> in library <work>.
+WARNING:Xst:905 - "../../Downloads/lab0/Mux4.v" line 35: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <d1>, <d2>, <d3>, <d4>
+Module <Mux4> is correct for synthesis.
+ 
+Analyzing module <twoBit> in library <work>.
+Module <twoBit> is correct for synthesis.
+ 
+Analyzing module <Dec> in library <work>.
+Module <Dec> is correct for synthesis.
+ 
+Analyzing module <AlarmJustice> in library <work>.
+Module <AlarmJustice> is correct for synthesis.
+ 
+Analyzing module <AlarmOn> in library <work>.
+Module <AlarmOn> is correct for synthesis.
+ 
+Analyzing module <AlarmDivider> in library <work>.
+Module <AlarmDivider> is correct for synthesis.
+ 
+Analyzing module <Stahp> in library <work>.
+Module <Stahp> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ClockDiviper>.
+    Related source file is "ClockDiviper.v".
+    Found 1-bit register for signal <clk_1hz>.
+    Found 33-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <ClockDiviper> synthesized.
+
+
+Synthesizing Unit <ClockTheAbaza>.
+    Related source file is "ClockTheAbaza.v".
+    Found 1-bit register for signal <clk_100hz>.
+    Found 33-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <ClockTheAbaza> synthesized.
+
+
+Synthesizing Unit <ClockAdjust>.
+    Related source file is "ClockAdjust.v".
+    Found 1-bit register for signal <Monkey>.
+    Found 6-bit register for signal <outh>.
+    Found 6-bit register for signal <outm>.
+    Found 6-bit up counter for signal <outs>.
+    Found 6-bit adder for signal <outh$addsub0000> created at line 73.
+    Found 6-bit adder for signal <outm$addsub0000> created at line 81.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <ClockAdjust> synthesized.
+
+
+Synthesizing Unit <BCD>.
+    Related source file is "BCD.v".
+    Found 61x8-bit ROM for signal <bin$rom0000>.
+WARNING:Xst:737 - Found 4-bit latch for signal <bcd1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <bcd0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 ROM(s).
+Unit <BCD> synthesized.
+
+
+Synthesizing Unit <bcd27seg>.
+    Related source file is "bcd27seg.v".
+    Found 10x7-bit ROM for signal <seg7$mux0000>.
+WARNING:Xst:737 - Found 7-bit latch for signal <seg7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 ROM(s).
+Unit <bcd27seg> synthesized.
+
+
+Synthesizing Unit <Mux4>.
+    Related source file is "../../Downloads/lab0/Mux4.v".
+    Found 7-bit 4-to-1 multiplexer for signal <q>.
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <Mux4> synthesized.
+
+
+Synthesizing Unit <twoBit>.
+    Related source file is "../../Downloads/lab0/twoBit.v".
+    Found 2-bit up counter for signal <O>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <twoBit> synthesized.
+
+
+Synthesizing Unit <Dec>.
+    Related source file is "../../Downloads/lab0/Dec.v".
+Unit <Dec> synthesized.
+
+
+Synthesizing Unit <AlarmJustice>.
+    Related source file is "AlarmJustice.v".
+    Found 1-bit register for signal <shampanzi>.
+    Found 6-bit up counter for signal <outh>.
+    Found 6-bit up counter for signal <outm>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <AlarmJustice> synthesized.
+
+
+Synthesizing Unit <AlarmOn>.
+    Related source file is "AlarmOn.v".
+    Found 1-bit register for signal <alarmtrigger>.
+    Found 6-bit comparator equal for signal <alarmtrigger$cmp_eq0000> created at line 30.
+    Found 6-bit comparator equal for signal <alarmtrigger$cmp_eq0001> created at line 30.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <AlarmOn> synthesized.
+
+
+Synthesizing Unit <AlarmDivider>.
+    Related source file is "AlarmDivider.v".
+    Found 1-bit register for signal <clk_12Mhz>.
+    Found 1-bit register for signal <clk_1536Khz>.
+    Found 1-bit register for signal <clk_48Khz>.
+    Found 1-bit register for signal <clk_10Khz>.
+    Found 32-bit up counter for signal <cnt1>.
+    Found 32-bit up counter for signal <cnt2>.
+    Found 32-bit up counter for signal <cnt3>.
+    Found 32-bit up counter for signal <cnt4>.
+    Found 1-bit register for signal <tclk_10Khz>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred   5 D-type flip-flop(s).
+Unit <AlarmDivider> synthesized.
+
+
+Synthesizing Unit <Stahp>.
+    Related source file is "Stahp.v".
+    Found 6-bit up counter for signal <outm>.
+    Found 6-bit up counter for signal <outs>.
+    Summary:
+	inferred   2 Counter(s).
+Unit <Stahp> synthesized.
+
+
+Synthesizing Unit <Main>.
+    Related source file is "Main.v".
+WARNING:Xst:1306 - Output <outsegh2> is never assigned.
+WARNING:Xst:647 - Input <stop> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <outsegm1> is never assigned.
+WARNING:Xst:1306 - Output <outsegm2> is never assigned.
+WARNING:Xst:1306 - Output <outsegh1> is never assigned.
+WARNING:Xst:646 - Signal <cnt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 21
+ 10x7-bit ROM                                          : 14
+ 61x8-bit ROM                                          : 7
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 2
+# Counters                                             : 13
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 4
+ 33-bit up counter                                     : 3
+ 6-bit up counter                                      : 5
+# Registers                                            : 13
+ 1-bit register                                        : 11
+ 6-bit register                                        : 2
+# Latches                                              : 28
+ 4-bit latch                                           : 14
+ 7-bit latch                                           : 14
+# Comparators                                          : 2
+ 6-bit comparator equal                                : 2
+# Multiplexers                                         : 4
+ 7-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 21
+ 10x7-bit ROM                                          : 14
+ 61x8-bit ROM                                          : 7
+# Adders/Subtractors                                   : 2
+ 6-bit adder                                           : 2
+# Counters                                             : 13
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 4
+ 33-bit up counter                                     : 3
+ 6-bit up counter                                      : 5
+# Registers                                            : 23
+ Flip-Flops                                            : 23
+# Latches                                              : 28
+ 4-bit latch                                           : 14
+ 7-bit latch                                           : 14
+# Comparators                                          : 2
+ 6-bit comparator equal                                : 2
+# Multiplexers                                         : 4
+ 7-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <Main>: instances <CD>, <CS> of unit <ClockDiviper> are equivalent, second instance is removed
+WARNING:Xst:1710 - FF/Latch <bcd1_3> (without init value) has a constant value of 0 in block <BCD>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Main> ...
+
+Optimizing unit <ClockAdjust> ...
+
+Optimizing unit <AlarmJustice> ...
+
+Optimizing unit <AlarmDivider> ...
+
+Optimizing unit <Stahp> ...
+
+Optimizing unit <BCD> ...
+
+Optimizing unit <bcd27seg> ...
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4S/seg7_0> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2S/seg7_0> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4a/seg7_0> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2a/seg7_0> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg6/seg7_0> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg4/seg7_0> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_6> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_5> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_4> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_3> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_2> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_1> is equivalent to a wire in block <Main>.
+WARNING:Xst:1294 - Latch <bcd27seg2/seg7_0> is equivalent to a wire in block <Main>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 36.
+FlipFlop AJ/shampanzi has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 249
+ Flip-Flops                                            : 249
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Main.ngr
+Top Level Output File Name         : Main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 91
+
+Cell Usage :
+# BELS                             : 1133
+#      GND                         : 1
+#      INV                         : 29
+#      LUT1                        : 189
+#      LUT2                        : 11
+#      LUT2_D                      : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 141
+#      LUT3_D                      : 2
+#      LUT4                        : 241
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 238
+#      MUXF5                       : 70
+#      MUXF6                       : 7
+#      VCC                         : 1
+#      XORCY                       : 194
+# FlipFlops/Latches                : 347
+#      FDCE                        : 18
+#      FDE                         : 10
+#      FDR                         : 197
+#      FDRE                        : 24
+#      LD                          : 98
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 61
+#      IBUF                        : 8
+#      OBUF                        : 53
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      323  out of    960    33%  
+ Number of Slice Flip Flops:            338  out of   1920    17%  
+ Number of 4 input LUTs:                622  out of   1920    32%  
+ Number of IOs:                          91
+ Number of bonded IOBs:                  62  out of     83    74%  
+    IOB Flip Flops:                       9
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------+---------------------------+-------+
+Clock Signal                                     | Clock buffer(FF name)     | Load  |
+-------------------------------------------------+---------------------------+-------+
+clk                                              | BUFGP                     | 201   |
+CD/clk_1hz1                                      | BUFG                      | 46    |
+AP/clk_100hz                                     | NONE(Binco/O_0)           | 2     |
+bcd2S/bcd1_or0000(bcd2S/bcd1_or0000:O)           | NONE(*)(bcd2S/bcd1_2)     | 7     |
+bcd1S/bcd1_or0000(bcd1S/bcd1_or0000:O)           | NONE(*)(bcd1S/bcd1_2)     | 7     |
+bcd2a/bcd1_or0000(bcd2a/bcd1_or0000:O)           | NONE(*)(bcd2a/bcd1_2)     | 7     |
+bcd1a/bcd1_or0000(bcd1a/bcd1_or0000:O)           | NONE(*)(bcd1a/bcd1_2)     | 7     |
+bcd3/bcd1_or0000(bcd3/bcd1_or0000:O)             | NONE(*)(bcd3/bcd1_2)      | 7     |
+bcd2/bcd1_or0000(bcd2/bcd1_or0000:O)             | NONE(*)(bcd2/bcd1_2)      | 7     |
+bcd1/bcd1_or0000(bcd1/bcd1_or0000:O)             | NONE(*)(bcd1/bcd1_2)      | 7     |
+bcd27seg3S/seg7_or0000(bcd27seg3S/seg7_or00001:O)| NONE(*)(bcd27seg3S/seg7_6)| 7     |
+bcd27seg1S/seg7_or0000(bcd27seg1S/seg7_or00001:O)| NONE(*)(bcd27seg1S/seg7_6)| 7     |
+bcd27seg3a/seg7_or0000(bcd27seg3a/seg7_or00001:O)| NONE(*)(bcd27seg3a/seg7_6)| 7     |
+bcd27seg1a/seg7_or0000(bcd27seg1a/seg7_or00001:O)| NONE(*)(bcd27seg1a/seg7_6)| 7     |
+bcd27seg5/seg7_or0000(bcd27seg5/seg7_or00001:O)  | NONE(*)(bcd27seg5/seg7_6) | 7     |
+bcd27seg3/seg7_or0000(bcd27seg3/seg7_or00001:O)  | NONE(*)(bcd27seg3/seg7_6) | 7     |
+bcd27seg1/seg7_or0000(bcd27seg1/seg7_or00001:O)  | NONE(*)(bcd27seg1/seg7_6) | 7     |
+-------------------------------------------------+---------------------------+-------+
+(*) These 14 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+CA/outh_and0000(CA/outh_and00001:O)| NONE(CA/outh_0)        | 18    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.659ns (Maximum Frequency: 150.173MHz)
+   Minimum input arrival time before clock: 7.543ns
+   Maximum output required time after clock: 9.070ns
+   Maximum combinational path delay: 7.370ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.299ns (frequency: 188.720MHz)
+  Total number of paths / destination ports: 9709 / 401
+-------------------------------------------------------------------------
+Delay:               5.299ns (Levels of Logic = 10)
+  Source:            AP/cnt_8 (FF)
+  Destination:       AP/cnt_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: AP/cnt_8 to AP/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  AP/cnt_8 (AP/cnt_8)
+     LUT1:I0->O            1   0.704   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<0>_rt (AP/clk_100hz_cmp_eq0000_wg_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<0> (AP/clk_100hz_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<1> (AP/clk_100hz_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<2> (AP/clk_100hz_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<3> (AP/clk_100hz_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<4> (AP/clk_100hz_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<5> (AP/clk_100hz_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<6> (AP/clk_100hz_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  AP/clk_100hz_cmp_eq0000_wg_cy<7> (AP/clk_100hz_cmp_eq0000_wg_cy<7>)
+     MUXCY:CI->O          34   0.331   1.263  AP/clk_100hz_cmp_eq0000_wg_cy<8> (AP/clk_100hz_cmp_eq0000)
+     FDR:R                     0.911          AP/cnt_0
+    ----------------------------------------
+    Total                      5.299ns (3.414ns logic, 1.885ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CD/clk_1hz1'
+  Clock period: 6.659ns (frequency: 150.173MHz)
+  Total number of paths / destination ports: 551 / 91
+-------------------------------------------------------------------------
+Delay:               6.659ns (Levels of Logic = 3)
+  Source:            S/outs_4 (FF)
+  Destination:       S/outs_5 (FF)
+  Source Clock:      CD/clk_1hz1 rising
+  Destination Clock: CD/clk_1hz1 rising
+
+  Data Path: S/outs_4 to S/outs_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.591   1.209  S/outs_4 (S/outs_4)
+     LUT2_D:I0->O          1   0.704   0.424  S/Mcount_outs_xor<5>131 (S/N12)
+     LUT4:I3->O            7   0.704   0.743  S/outs_and00001 (S/outm_not0001)
+     LUT3:I2->O            6   0.704   0.669  S/outs_and00002 (S/outs_and0000)
+     FDRE:R                    0.911          S/outs_0
+    ----------------------------------------
+    Total                      6.659ns (3.614ns logic, 3.045ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'AP/clk_100hz'
+  Clock period: 3.290ns (frequency: 303.927MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.290ns (Levels of Logic = 1)
+  Source:            Binco/O_0 (FF)
+  Destination:       Binco/O_0 (FF)
+  Source Clock:      AP/clk_100hz rising
+  Destination Clock: AP/clk_100hz rising
+
+  Data Path: Binco/O_0 to Binco/O_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             48   0.591   1.267  Binco/O_0 (Binco/O_0)
+     INV:I->O              1   0.704   0.420  Binco/Mcount_O_xor<0>11_INV_0 (Result<0>2)
+     FDR:D                     0.308          Binco/O_0
+    ----------------------------------------
+    Total                      3.290ns (1.603ns logic, 1.687ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'AP/clk_100hz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.062ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       Binco/O_0 (FF)
+  Destination Clock: AP/clk_100hz rising
+
+  Data Path: rst to Binco/O_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   0.933  rst_IBUF (rst_IBUF)
+     FDR:R                     0.911          Binco/O_0
+    ----------------------------------------
+    Total                      3.062ns (2.129ns logic, 0.933ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CD/clk_1hz1'
+  Total number of paths / destination ports: 302 / 72
+-------------------------------------------------------------------------
+Offset:              7.543ns (Levels of Logic = 4)
+  Source:            mode<1> (PAD)
+  Destination:       S/outs_5 (FF)
+  Destination Clock: CD/clk_1hz1 rising
+
+  Data Path: mode<1> to S/outs_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.435  mode_1_IBUF (mode_1_IBUF)
+     LUT4:I0->O            1   0.704   0.455  S/outs_and00001_SW0 (N172)
+     LUT4:I2->O            7   0.704   0.743  S/outs_and00001 (S/outm_not0001)
+     LUT3:I2->O            6   0.704   0.669  S/outs_and00002 (S/outs_and0000)
+     FDRE:R                    0.911          S/outs_0
+    ----------------------------------------
+    Total                      7.543ns (4.241ns logic, 3.302ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CD/clk_1hz1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            AO/alarmtrigger (FF)
+  Destination:       AlarmTrigger (PAD)
+  Source Clock:      CD/clk_1hz1 rising
+
+  Data Path: AO/alarmtrigger to AlarmTrigger
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  AO/alarmtrigger (AO/alarmtrigger)
+     OBUF:I->O                 3.272          AlarmTrigger_OBUF (AlarmTrigger)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            AD/clk_12Mhz (FF)
+  Destination:       clk_12Mhz (PAD)
+  Source Clock:      clk rising
+
+  Data Path: AD/clk_12Mhz to clk_12Mhz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  AD/clk_12Mhz (AD/clk_12Mhz)
+     OBUF:I->O                 3.272          clk_12Mhz_OBUF (clk_12Mhz)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'AP/clk_100hz'
+  Total number of paths / destination ports: 176 / 32
+-------------------------------------------------------------------------
+Offset:              8.385ns (Levels of Logic = 5)
+  Source:            Binco/O_0 (FF)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      AP/clk_100hz rising
+
+  Data Path: Binco/O_0 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             48   0.591   1.442  Binco/O_0 (Binco/O_0)
+     LUT3:I0->O            1   0.704   0.000  M/Mmux_q_2_f5_38 (M/Mmux_q_2_f5_37)
+     MUXF5:I1->O           3   0.321   0.610  M/Mmux_q_2_f5_2_f5_6 (aQ_0_OBUF)
+     LUT4:I1->O            1   0.704   0.000  MOO/Mmux_q21 (MOO/Mmux_q2)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q2_f5 (BigO_0_OBUF)
+     OBUF:I->O                 3.272          BigO_0_OBUF (BigO<0>)
+    ----------------------------------------
+    Total                      8.385ns (5.913ns logic, 2.472ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg3a/seg7_or0000'
+  Total number of paths / destination ports: 21 / 14
+-------------------------------------------------------------------------
+Offset:              7.527ns (Levels of Logic = 5)
+  Source:            bcd27seg3a/seg7_6 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd27seg3a/seg7_or0000 falling
+
+  Data Path: bcd27seg3a/seg7_6 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.499  bcd27seg3a/seg7_6 (bcd27seg3a/seg7_6)
+     LUT3:I1->O            1   0.704   0.000  M/Mmux_q_2_f5_414 (M/Mmux_q_2_f5_413)
+     MUXF5:I0->O           3   0.321   0.610  M/Mmux_q_2_f5_2_f5_12 (aQ_6_OBUF)
+     LUT4:I1->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      7.527ns (5.998ns logic, 1.529ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd2a/bcd1_or0000'
+  Total number of paths / destination ports: 63 / 14
+-------------------------------------------------------------------------
+Offset:              9.070ns (Levels of Logic = 6)
+  Source:            bcd2a/bcd1_1 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd2a/bcd1_or0000 falling
+
+  Data Path: bcd2a/bcd1_1 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd2a/bcd1_1 (bcd2a/bcd1_1)
+     LUT3:I0->O            1   0.704   0.455  bcd27seg4a/Mrom_seg7_mux000061 (ad2<6>)
+     LUT3:I2->O            1   0.704   0.000  M/Mmux_q_2_f5_414 (M/Mmux_q_2_f5_413)
+     MUXF5:I0->O           3   0.321   0.610  M/Mmux_q_2_f5_2_f5_12 (aQ_6_OBUF)
+     LUT4:I1->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      9.070ns (6.702ns logic, 2.368ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg1a/seg7_or0000'
+  Total number of paths / destination ports: 21 / 14
+-------------------------------------------------------------------------
+Offset:              7.527ns (Levels of Logic = 5)
+  Source:            bcd27seg1a/seg7_6 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd27seg1a/seg7_or0000 falling
+
+  Data Path: bcd27seg1a/seg7_6 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.499  bcd27seg1a/seg7_6 (bcd27seg1a/seg7_6)
+     LUT3:I1->O            1   0.704   0.000  M/Mmux_q_2_f5_314 (M/Mmux_q_2_f5_313)
+     MUXF5:I1->O           3   0.321   0.610  M/Mmux_q_2_f5_2_f5_12 (aQ_6_OBUF)
+     LUT4:I1->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      7.527ns (5.998ns logic, 1.529ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd1a/bcd1_or0000'
+  Total number of paths / destination ports: 63 / 14
+-------------------------------------------------------------------------
+Offset:              9.070ns (Levels of Logic = 6)
+  Source:            bcd1a/bcd1_1 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd1a/bcd1_or0000 falling
+
+  Data Path: bcd1a/bcd1_1 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd1a/bcd1_1 (bcd1a/bcd1_1)
+     LUT3:I0->O            1   0.704   0.455  bcd27seg2a/Mrom_seg7_mux000061 (ad4<6>)
+     LUT3:I2->O            1   0.704   0.000  M/Mmux_q_2_f5_314 (M/Mmux_q_2_f5_313)
+     MUXF5:I1->O           3   0.321   0.610  M/Mmux_q_2_f5_2_f5_12 (aQ_6_OBUF)
+     LUT4:I1->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      9.070ns (6.702ns logic, 2.368ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg5/seg7_or0000'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            bcd27seg5/seg7_6 (LATCH)
+  Destination:       outsegs1<6> (PAD)
+  Source Clock:      bcd27seg5/seg7_or0000 falling
+
+  Data Path: bcd27seg5/seg7_6 to outsegs1<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  bcd27seg5/seg7_6 (bcd27seg5/seg7_6)
+     OBUF:I->O                 3.272          outsegs1_6_OBUF (outsegs1<6>)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd3/bcd1_or0000'
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Offset:              5.955ns (Levels of Logic = 2)
+  Source:            bcd3/bcd1_1 (LATCH)
+  Destination:       outsegs2<6> (PAD)
+  Source Clock:      bcd3/bcd1_or0000 falling
+
+  Data Path: bcd3/bcd1_1 to outsegs2<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd3/bcd1_1 (bcd3/bcd1_1)
+     LUT3:I0->O            1   0.704   0.420  bcd27seg6/Mrom_seg7_mux000061 (outsegs2_6_OBUF)
+     OBUF:I->O                 3.272          outsegs2_6_OBUF (outsegs2<6>)
+    ----------------------------------------
+    Total                      5.955ns (4.652ns logic, 1.303ns route)
+                                       (78.1% logic, 21.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg3/seg7_or0000'
+  Total number of paths / destination ports: 21 / 14
+-------------------------------------------------------------------------
+Offset:              7.452ns (Levels of Logic = 5)
+  Source:            bcd27seg3/seg7_6 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd27seg3/seg7_or0000 falling
+
+  Data Path: bcd27seg3/seg7_6 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.499  bcd27seg3/seg7_6 (bcd27seg3/seg7_6)
+     LUT3:I1->O            1   0.704   0.000  M/Mmux_q_46 (M/Mmux_q_46)
+     MUXF5:I0->O           3   0.321   0.535  M/Mmux_q_2_f5_5 (Q_6_OBUF)
+     LUT4:I3->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      7.452ns (5.998ns logic, 1.454ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd2/bcd1_or0000'
+  Total number of paths / destination ports: 63 / 14
+-------------------------------------------------------------------------
+Offset:              8.995ns (Levels of Logic = 6)
+  Source:            bcd2/bcd1_1 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd2/bcd1_or0000 falling
+
+  Data Path: bcd2/bcd1_1 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd2/bcd1_1 (bcd2/bcd1_1)
+     LUT3:I0->O            1   0.704   0.455  bcd27seg4/Mrom_seg7_mux000061 (bcd27seg4/Mrom_seg7_mux00006)
+     LUT3:I2->O            1   0.704   0.000  M/Mmux_q_46 (M/Mmux_q_46)
+     MUXF5:I0->O           3   0.321   0.535  M/Mmux_q_2_f5_5 (Q_6_OBUF)
+     LUT4:I3->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      8.995ns (6.702ns logic, 2.293ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg1/seg7_or0000'
+  Total number of paths / destination ports: 21 / 14
+-------------------------------------------------------------------------
+Offset:              7.452ns (Levels of Logic = 5)
+  Source:            bcd27seg1/seg7_6 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd27seg1/seg7_or0000 falling
+
+  Data Path: bcd27seg1/seg7_6 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.499  bcd27seg1/seg7_6 (bcd27seg1/seg7_6)
+     LUT3:I1->O            1   0.704   0.000  M/Mmux_q_36 (M/Mmux_q_36)
+     MUXF5:I1->O           3   0.321   0.535  M/Mmux_q_2_f5_5 (Q_6_OBUF)
+     LUT4:I3->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      7.452ns (5.998ns logic, 1.454ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd1/bcd1_or0000'
+  Total number of paths / destination ports: 63 / 14
+-------------------------------------------------------------------------
+Offset:              8.995ns (Levels of Logic = 6)
+  Source:            bcd1/bcd1_1 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd1/bcd1_or0000 falling
+
+  Data Path: bcd1/bcd1_1 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd1/bcd1_1 (bcd1/bcd1_1)
+     LUT3:I0->O            1   0.704   0.455  bcd27seg2/Mrom_seg7_mux000061 (bcd27seg2/Mrom_seg7_mux00006)
+     LUT3:I2->O            1   0.704   0.000  M/Mmux_q_36 (M/Mmux_q_36)
+     MUXF5:I1->O           3   0.321   0.535  M/Mmux_q_2_f5_5 (Q_6_OBUF)
+     LUT4:I3->O            1   0.704   0.000  MOO/Mmux_q141 (MOO/Mmux_q14)
+     MUXF5:I1->O           1   0.321   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      8.995ns (6.702ns logic, 2.293ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg3S/seg7_or0000'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 4)
+  Source:            bcd27seg3S/seg7_6 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd27seg3S/seg7_or0000 falling
+
+  Data Path: bcd27seg3S/seg7_6 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.499  bcd27seg3S/seg7_6 (bcd27seg3S/seg7_6)
+     LUT3:I1->O            1   0.704   0.000  M/Mmux_q_2_f5_47 (M/Mmux_q_2_f5_46)
+     MUXF5:I0->O           2   0.321   0.447  M/Mmux_q_2_f5_2_f5_5 (SQ_6_OBUF)
+     MUXF5:S->O            1   0.739   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      7.078ns (5.712ns logic, 1.366ns route)
+                                       (80.7% logic, 19.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd2S/bcd1_or0000'
+  Total number of paths / destination ports: 42 / 14
+-------------------------------------------------------------------------
+Offset:              8.621ns (Levels of Logic = 5)
+  Source:            bcd2S/bcd1_1 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd2S/bcd1_or0000 falling
+
+  Data Path: bcd2S/bcd1_1 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd2S/bcd1_1 (bcd2S/bcd1_1)
+     LUT3:I0->O            1   0.704   0.455  bcd27seg4S/Mrom_seg7_mux000061 (Sd2<6>)
+     LUT3:I2->O            1   0.704   0.000  M/Mmux_q_2_f5_47 (M/Mmux_q_2_f5_46)
+     MUXF5:I0->O           2   0.321   0.447  M/Mmux_q_2_f5_2_f5_5 (SQ_6_OBUF)
+     MUXF5:S->O            1   0.739   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      8.621ns (6.416ns logic, 2.205ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd27seg1S/seg7_or0000'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 4)
+  Source:            bcd27seg1S/seg7_6 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd27seg1S/seg7_or0000 falling
+
+  Data Path: bcd27seg1S/seg7_6 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.499  bcd27seg1S/seg7_6 (bcd27seg1S/seg7_6)
+     LUT3:I1->O            1   0.704   0.000  M/Mmux_q_2_f5_37 (M/Mmux_q_2_f5_36)
+     MUXF5:I1->O           2   0.321   0.447  M/Mmux_q_2_f5_2_f5_5 (SQ_6_OBUF)
+     MUXF5:S->O            1   0.739   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      7.078ns (5.712ns logic, 1.366ns route)
+                                       (80.7% logic, 19.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bcd1S/bcd1_or0000'
+  Total number of paths / destination ports: 42 / 14
+-------------------------------------------------------------------------
+Offset:              8.621ns (Levels of Logic = 5)
+  Source:            bcd1S/bcd1_1 (LATCH)
+  Destination:       BigO<6> (PAD)
+  Source Clock:      bcd1S/bcd1_or0000 falling
+
+  Data Path: bcd1S/bcd1_1 to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.676   0.883  bcd1S/bcd1_1 (bcd1S/bcd1_1)
+     LUT3:I0->O            1   0.704   0.455  bcd27seg2S/Mrom_seg7_mux000061 (Sd4<6>)
+     LUT3:I2->O            1   0.704   0.000  M/Mmux_q_2_f5_37 (M/Mmux_q_2_f5_36)
+     MUXF5:I1->O           2   0.321   0.447  M/Mmux_q_2_f5_2_f5_5 (SQ_6_OBUF)
+     MUXF5:S->O            1   0.739   0.420  MOO/Mmux_q14_f5 (BigO_6_OBUF)
+     OBUF:I->O                 3.272          BigO_6_OBUF (BigO<6>)
+    ----------------------------------------
+    Total                      8.621ns (6.416ns logic, 2.205ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Delay:               7.370ns (Levels of Logic = 4)
+  Source:            mode<1> (PAD)
+  Destination:       BigO<6> (PAD)
+
+  Data Path: mode<1> to BigO<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            26   1.218   1.435  mode_1_IBUF (mode_1_IBUF)
+     LUT4:I0->O            1   0.704   0.000  MOO/Mmux_q82 (MOO/Mmux_q81)
+     MUXF5:I0->O           1   0.321   0.420  MOO/Mmux_q8_f5 (BigO_3_OBUF)
+     OBUF:I->O                 3.272          BigO_3_OBUF (BigO<3>)
+    ----------------------------------------
+    Total                      7.370ns (5.515ns logic, 1.855ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.00 secs
+ 
+--> 
+
+Total memory usage is 223356 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

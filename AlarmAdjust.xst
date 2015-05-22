@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/ychamel/Xilinx/DigitalBob/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/ychamel/Xilinx/DigitalBob/xst"
+elaborate
+-ifn AlarmAdjust.prj
+-ifmt mixed

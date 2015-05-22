@@ -1,0 +1,35 @@
+NET	"BigO[0]"	LOC	=	L14	;
+NET	"BigO[1]"	LOC	=	H12	;
+NET	"BigO[2]"	LOC	=	N14	;
+NET	"BigO[3]"	LOC	=	N11	;
+NET	"BigO[4]"	LOC	=	P12	;
+NET	"BigO[5]"	LOC	=	L13	;
+NET	"BigO[6]"	LOC	=	M12	;
+
+
+NET 	"clk" 			LOC 	= 	B8	;
+NET	"rst"				LOC	=	P11;
+
+NET 	"time_set"		LOC	=	L3	;
+NET 	"Monkey"		LOC	=	M11; #LED Clock Adjust
+NET	"shampanzi"	LOC	=	P7;	#LED ALARM ON
+#NET	"alarm_set"	LOC	=	G3;
+
+NET	 "inc_hr"		LOC	=	K3	;
+NET 	"inc_min"		LOC	=	B4 ;
+NET 	"enable"			LOC	=	N3	;
+
+NET	"Four_Wheels[0]"	LOC	=	F12;
+NET	"Four_Wheels[1]"	LOC	=	J12;
+NET	"Four_Wheels[2]"	LOC	=	M13;
+NET	"Four_Wheels[3]"	LOC	=	K14;
+
+NET 	"clk_12Mhz"			LOC	=	B2	;
+NET 	"clk_48Khz"			LOC	=	A3	;
+NET 	"clk_1536Khz"		LOC	=	J3	;
+NET 	"clk_10Khz"			LOC	=	B5	;
+
+NET	"pause"	LOC	=	E2;
+NET	"mode[0]"	LOC	=	G3;
+NET	"mode[1]"	LOC	=	F3;
+#NET	"AlarmTrigger"		LOC	=	G1;

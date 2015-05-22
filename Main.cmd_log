@@ -1,0 +1,462 @@
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Main.ngc Main_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Digital_clock.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Digital_clock.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 
+xst -intstyle ise -ifn "C:/Users/ychamel/Xilinx/DigitalBob/Main.xst" -ofn "C:/Users/ychamel/Xilinx/DigitalBob/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ussef.ucf -p xc3s100e-cp132-4 Main.ngc Main.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Main_map.ncd Main.ngd Main.pcf 
+par -w -intstyle ise -ol high -t 1 Main_map.ncd Main.ncd Main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Ussef.ucf 
+bitgen -intstyle ise -f Main.ut Main.ncd 

@@ -1,0 +1,3 @@
+verilog work "PmodI2S_FSM.v"
+verilog work "PmodI2S.v"
+verilog work "alarmdivOmar.v"
